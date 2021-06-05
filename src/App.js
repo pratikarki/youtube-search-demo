@@ -17,10 +17,10 @@ const App = () => {
       <SearchBar onSearchSubmit={searchVideos} />
       <div className="ui grid">
         <div className="ui row">
-          <div className="eleven wide column">
+          <div className="column video-section">
             <VideoDetail video={currentVideo} />
           </div>
-          <div className="five wide column">
+          <div className="column list-section">
             <VideoList videos={videos} onVideoSelect={setCurrentVideo} />
           </div>
         </div>
